@@ -2,12 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    <meta name="description" content="Portfolio of Your Name: projects, skills and contact details." />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Main">
+        <a class="brand" href="#top">Your Name</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="top" class="hero">
+        <h1>Hi, I'm Your Name</h1>
+        <p>Student developer who builds and automates software.</p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>Write two or three sentences about yourself here.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="project-list" class="grid"></div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="year"></span> Your Name</p>
+    </footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
